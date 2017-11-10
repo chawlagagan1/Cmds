@@ -8,7 +8,7 @@
 
 
 
-export type AddColumn = {
+export type AddColumn1 = {
     RowId: string | null,
     Widths: ColumnWidths | null,
     CorrelationId: string | null,
