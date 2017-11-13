@@ -8,21 +8,21 @@
 
 
 
-export check AddColumn = {
+export check1 AddColumn = {
     RowId: string | null,
     Widths: ColumnWidths | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check ColumnWidths = {
+export check1 ColumnWidths = {
     Xs: number | null,
     Sm: number | null,
     Md: number | null,
     Lg: number | null,
 }
 
-export check RootId = {
+export check1 RootId = {
     Type: RootType | null,
     Id: number | null,
 }
@@ -32,13 +32,13 @@ export enum RootType {
     Theme = 1, 
 }
 
-export check DeleteColumn = {
+export check1 DeleteColumn = {
     ColumnId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check MoveColumnToRow = {
+export check1 MoveColumnToRow = {
     ColumnId: string | null,
     RowId: string | null,
     AnchorColumnId: string | null,
@@ -46,21 +46,21 @@ export check MoveColumnToRow = {
     RootId: RootId | null,
 }
 
-export check SetColumnClasses = {
+export check1 SetColumnClasses = {
     ColumnId: string | null,
     Classes: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check SetColumnWidths = {
+export check1 SetColumnWidths = {
     ColumnId: string | null,
     Widths: ColumnWidths | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check AddComponentInstance = {
+export check1 AddComponentInstance = {
     ColumnId: string | null,
     AnchorColumnElementId: string | null,
     SiteComponentId: number | null,
@@ -68,7 +68,7 @@ export check AddComponentInstance = {
     RootId: RootId | null,
 }
 
-export check MoveComponentInstanceToColumn = {
+export check1 MoveComponentInstanceToColumn = {
     ComponentInstanceId: string | null,
     ColumnId: string | null,
     AnchorColumnElement: string | null,
@@ -76,13 +76,13 @@ export check MoveComponentInstanceToColumn = {
     RootId: RootId | null,
 }
 
-export check RemoveComponentInstance = {
+export check1 RemoveComponentInstance = {
     ComponentInstanceId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check AddComponentSlot = {
+export check1 AddComponentSlot = {
     ColumnId: string | null,
     AnchorColumnElementId: string | null,
     ThemeComponentId: number | null,
@@ -90,7 +90,7 @@ export check AddComponentSlot = {
     RootId: RootId | null,
 }
 
-export check MoveComponentSlotToColumn = {
+export check1 MoveComponentSlotToColumn = {
     ComponentSlotId: string | null,
     ColumnId: string | null,
     AnchorColumnElement: string | null,
@@ -98,13 +98,13 @@ export check MoveComponentSlotToColumn = {
     RootId: RootId | null,
 }
 
-export check RemoveComponentSlot = {
+export check1 RemoveComponentSlot = {
     ComponentSlotId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check AddDynamicComponentArea = {
+export check1 AddDynamicComponentArea = {
     NewDynamicComponentAreaId: string | null,
     ColumnId: string | null,
     AnchorColumnElement: string | null,
@@ -112,13 +112,13 @@ export check AddDynamicComponentArea = {
     RootId: RootId | null,
 }
 
-export check DeleteDynamicComponentArea = {
+export check1 DeleteDynamicComponentArea = {
     DynamicComponentAreaId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check MoveDynamicComponentArea = {
+export check1 MoveDynamicComponentArea = {
     DynamicComponentAreaId: string | null,
     ColumnId: string | null,
     AnchorColumnElement: string | null,
@@ -126,58 +126,58 @@ export check MoveDynamicComponentArea = {
     RootId: RootId | null,
 }
 
-export check CreateLayout = {
+export check1 CreateLayout = {
     Name: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
     NewLayoutId: string | null,
 }
 
-export check DeleteLayout = {
+export check1 DeleteLayout = {
     LayoutId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check RenameLayout = {
+export check1 RenameLayout = {
     LayoutId: string | null,
     NewLayoutName: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check SetLayoutClasses = {
+export check1 SetLayoutClasses = {
     LayoutId: string | null,
     Classes: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check ChangeDefaultLayout = {
+export check1 ChangeDefaultLayout = {
     DefaultLayoutId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check CreateSiteLayoutRoot = {
+export check1 CreateSiteLayoutRoot = {
     SiteLayoutRootId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check CreateThemeLayoutRoot = {
+export check1 CreateThemeLayoutRoot = {
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check UseLayoutOnPage = {
+export check1 UseLayoutOnPage = {
     PageId: number | null,
     LayoutId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check CreateRowInColumn = {
+export check1 CreateRowInColumn = {
     NewRowId: string | null,
     ColumnId: string | null,
     AnchorColumnElement: string | null,
@@ -185,7 +185,7 @@ export check CreateRowInColumn = {
     RootId: RootId | null,
 }
 
-export check CreateRowInSection = {
+export check1 CreateRowInSection = {
     NewRowId: string | null,
     SectionId: string | null,
     AnchorRowId: string | null,
@@ -193,13 +193,13 @@ export check CreateRowInSection = {
     RootId: RootId | null,
 }
 
-export check DeleteRow = {
+export check1 DeleteRow = {
     RowId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check MoveRowToColumn = {
+export check1 MoveRowToColumn = {
     RowId: string | null,
     FromColumnId: string | null,
     ToColumnId: string | null,
@@ -208,7 +208,7 @@ export check MoveRowToColumn = {
     RootId: RootId | null,
 }
 
-export check MoveRowToSection = {
+export check1 MoveRowToSection = {
     RowId: string | null,
     ToSectionId: string | null,
     AnchorRowId: string | null,
@@ -216,14 +216,14 @@ export check MoveRowToSection = {
     RootId: RootId | null,
 }
 
-export check SetRowClasses = {
+export check1 SetRowClasses = {
     RowId: string | null,
     Classes: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check CloneSectionToLayout = {
+export check1 CloneSectionToLayout = {
     NewSectionId: string | null,
     SectionId: string | null,
     LayoutId: string | null,
@@ -231,7 +231,7 @@ export check CloneSectionToLayout = {
     RootId: RootId | null,
 }
 
-export check CreateSection = {
+export check1 CreateSection = {
     NewSectionId: string | null,
     LayoutId: string | null,
     Name: string | null,
@@ -240,32 +240,32 @@ export check CreateSection = {
     RootId: RootId | null,
 }
 
-export check DeleteSection = {
+export check1 DeleteSection = {
     SectionId: string | null,
     LayoutId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check ReapplyThemeOnSite = {
+export check1 ReapplyThemeOnSite = {
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check ApplyThemeToSite = {
+export check1 ApplyThemeToSite = {
     ThemeLayoutRootId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check LinkSectionToLayout = {
+export check1 LinkSectionToLayout = {
     SectionId: string | null,
     LayoutId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check MoveSectionToLayout = {
+export check1 MoveSectionToLayout = {
     SectionId: string | null,
     ToLayoutId: string | null,
     FromLayoutId: string | null,
@@ -273,14 +273,14 @@ export check MoveSectionToLayout = {
     RootId: RootId | null,
 }
 
-export check RenameSection = {
+export check1 RenameSection = {
     SectionId: string | null,
     NewName: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check SequenceSection = {
+export check1 SequenceSection = {
     SectionId: string | null,
     LayoutId: string | null,
     AnchorSectionId: string | null,
@@ -288,14 +288,14 @@ export check SequenceSection = {
     RootId: RootId | null,
 }
 
-export check SetSectionClasses = {
+export check1 SetSectionClasses = {
     SectionId: string | null,
     Classes: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export check SetSectionWidth = {
+export check1 SetSectionWidth = {
     SectionId: string | null,
     Width: SectionWidth | null,
     CorrelationId: string | null,
