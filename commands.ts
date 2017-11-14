@@ -8,21 +8,21 @@
 
 
 
-export next AddColumn = {
+export type AddColumn = {
     RowId: string | null,
     Widths: ColumnWidths | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next ColumnWidths = {
+export type ColumnWidths = {
     Xs: number | null,
     Sm: number | null,
     Md: number | null,
     Lg: number | null,
 }
 
-export next RootId = {
+export type RootId = {
     Type: RootType | null,
     Id: number | null,
 }
@@ -32,13 +32,13 @@ export enum RootType {
     Theme = 1, 
 }
 
-export next DeleteColumn = {
+export type DeleteColumn = {
     ColumnId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next MoveColumnToRow = {
+export type MoveColumnToRow = {
     ColumnId: string | null,
     RowId: string | null,
     AnchorColumnId: string | null,
@@ -46,21 +46,21 @@ export next MoveColumnToRow = {
     RootId: RootId | null,
 }
 
-export next SetColumnClasses = {
+export type SetColumnClasses = {
     ColumnId: string | null,
     Classes: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next SetColumnWidths = {
+export type SetColumnWidths = {
     ColumnId: string | null,
     Widths: ColumnWidths | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next AddComponentInstance = {
+export type AddComponentInstance = {
     ColumnId: string | null,
     AnchorColumnElementId: string | null,
     SiteComponentId: number | null,
@@ -68,7 +68,7 @@ export next AddComponentInstance = {
     RootId: RootId | null,
 }
 
-export next MoveComponentInstanceToColumn = {
+export type MoveComponentInstanceToColumn = {
     ComponentInstanceId: string | null,
     ColumnId: string | null,
     AnchorColumnElement: string | null,
@@ -76,13 +76,13 @@ export next MoveComponentInstanceToColumn = {
     RootId: RootId | null,
 }
 
-export next RemoveComponentInstance = {
+export type RemoveComponentInstance = {
     ComponentInstanceId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next AddComponentSlot = {
+export type AddComponentSlot = {
     ColumnId: string | null,
     AnchorColumnElementId: string | null,
     ThemeComponentId: number | null,
@@ -90,7 +90,7 @@ export next AddComponentSlot = {
     RootId: RootId | null,
 }
 
-export next MoveComponentSlotToColumn = {
+export type MoveComponentSlotToColumn = {
     ComponentSlotId: string | null,
     ColumnId: string | null,
     AnchorColumnElement: string | null,
@@ -98,13 +98,13 @@ export next MoveComponentSlotToColumn = {
     RootId: RootId | null,
 }
 
-export next RemoveComponentSlot = {
+export type RemoveComponentSlot = {
     ComponentSlotId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next AddDynamicComponentArea = {
+export type AddDynamicComponentArea = {
     NewDynamicComponentAreaId: string | null,
     ColumnId: string | null,
     AnchorColumnElement: string | null,
@@ -112,13 +112,13 @@ export next AddDynamicComponentArea = {
     RootId: RootId | null,
 }
 
-export next DeleteDynamicComponentArea = {
+export type DeleteDynamicComponentArea = {
     DynamicComponentAreaId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next MoveDynamicComponentArea = {
+export type MoveDynamicComponentArea = {
     DynamicComponentAreaId: string | null,
     ColumnId: string | null,
     AnchorColumnElement: string | null,
@@ -126,58 +126,58 @@ export next MoveDynamicComponentArea = {
     RootId: RootId | null,
 }
 
-export next CreateLayout = {
+export type CreateLayout = {
     Name: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
     NewLayoutId: string | null,
 }
 
-export next DeleteLayout = {
+export type DeleteLayout = {
     LayoutId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next RenameLayout = {
+export type RenameLayout = {
     LayoutId: string | null,
     NewLayoutName: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next SetLayoutClasses = {
+export type SetLayoutClasses = {
     LayoutId: string | null,
     Classes: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next ChangeDefaultLayout = {
+export type ChangeDefaultLayout = {
     DefaultLayoutId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next CreateSiteLayoutRoot = {
+export type CreateSiteLayoutRoot = {
     SiteLayoutRootId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next CreateThemeLayoutRoot = {
+export type CreateThemeLayoutRoot = {
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next UseLayoutOnPage = {
+export type UseLayoutOnPage = {
     PageId: number | null,
     LayoutId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next CreateRowInColumn = {
+export type CreateRowInColumn = {
     NewRowId: string | null,
     ColumnId: string | null,
     AnchorColumnElement: string | null,
@@ -185,7 +185,7 @@ export next CreateRowInColumn = {
     RootId: RootId | null,
 }
 
-export next CreateRowInSection = {
+export type CreateRowInSection = {
     NewRowId: string | null,
     SectionId: string | null,
     AnchorRowId: string | null,
@@ -193,13 +193,13 @@ export next CreateRowInSection = {
     RootId: RootId | null,
 }
 
-export next DeleteRow = {
+export type DeleteRow = {
     RowId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next MoveRowToColumn = {
+export type MoveRowToColumn = {
     RowId: string | null,
     FromColumnId: string | null,
     ToColumnId: string | null,
@@ -208,7 +208,7 @@ export next MoveRowToColumn = {
     RootId: RootId | null,
 }
 
-export next MoveRowToSection = {
+export type MoveRowToSection = {
     RowId: string | null,
     ToSectionId: string | null,
     AnchorRowId: string | null,
@@ -216,14 +216,14 @@ export next MoveRowToSection = {
     RootId: RootId | null,
 }
 
-export next SetRowClasses = {
+export type SetRowClasses = {
     RowId: string | null,
     Classes: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next CloneSectionToLayout = {
+export type CloneSectionToLayout = {
     NewSectionId: string | null,
     SectionId: string | null,
     LayoutId: string | null,
@@ -231,7 +231,7 @@ export next CloneSectionToLayout = {
     RootId: RootId | null,
 }
 
-export next CreateSection = {
+export type CreateSection = {
     NewSectionId: string | null,
     LayoutId: string | null,
     Name: string | null,
@@ -240,32 +240,32 @@ export next CreateSection = {
     RootId: RootId | null,
 }
 
-export next DeleteSection = {
+export type DeleteSection = {
     SectionId: string | null,
     LayoutId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next ReapplyThemeOnSite = {
+export type ReapplyThemeOnSite = {
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next ApplyThemeToSite = {
+export type ApplyThemeToSite = {
     ThemeLayoutRootId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next LinkSectionToLayout = {
+export type LinkSectionToLayout = {
     SectionId: string | null,
     LayoutId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next MoveSectionToLayout = {
+export type MoveSectionToLayout = {
     SectionId: string | null,
     ToLayoutId: string | null,
     FromLayoutId: string | null,
@@ -273,14 +273,14 @@ export next MoveSectionToLayout = {
     RootId: RootId | null,
 }
 
-export next RenameSection = {
+export type RenameSection = {
     SectionId: string | null,
     NewName: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next SequenceSection = {
+export type SequenceSection = {
     SectionId: string | null,
     LayoutId: string | null,
     AnchorSectionId: string | null,
@@ -288,14 +288,14 @@ export next SequenceSection = {
     RootId: RootId | null,
 }
 
-export next SetSectionClasses = {
+export type SetSectionClasses = {
     SectionId: string | null,
     Classes: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
 
-export next SetSectionWidth = {
+export type SetSectionWidth = {
     SectionId: string | null,
     Width: SectionWidth | null,
     CorrelationId: string | null,
