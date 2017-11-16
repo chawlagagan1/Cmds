@@ -9,6 +9,7 @@
 
 
 export type AddColumn = {
+    NewColumnId: string | null,
     RowId: string | null,
     Widths: ColumnWidths | null,
     CorrelationId: string | null,
@@ -61,6 +62,7 @@ export type SetColumnWidths = {
 }
 
 export type AddComponentInstance = {
+    NewComponentInstanceId: string | null,
     ColumnId: string | null,
     AnchorColumnElementId: string | null,
     SiteComponentId: number | null,
@@ -83,6 +85,7 @@ export type RemoveComponentInstance = {
 }
 
 export type AddComponentSlot = {
+    NewComponentSlotId: string | null,
     ColumnId: string | null,
     AnchorColumnElementId: string | null,
     ThemeComponentId: number | null,
@@ -227,6 +230,7 @@ export type CloneSectionToLayout = {
     NewSectionId: string | null,
     SectionId: string | null,
     LayoutId: string | null,
+    AnchorSectionId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
@@ -261,6 +265,7 @@ export type ApplyThemeToSite = {
 export type LinkSectionToLayout = {
     SectionId: string | null,
     LayoutId: string | null,
+    AnchorSectionId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
@@ -269,6 +274,7 @@ export type MoveSectionToLayout = {
     SectionId: string | null,
     ToLayoutId: string | null,
     FromLayoutId: string | null,
+    AnchorSectionId: string | null,
     CorrelationId: string | null,
     RootId: RootId | null,
 }
